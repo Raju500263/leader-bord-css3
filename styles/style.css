@@ -33,8 +33,6 @@ hr {
 
 
 
-
-
 /* top-players style  */
 
 .section-title {
@@ -201,4 +199,32 @@ hr {
 
 .fa-clock {
     padding-right: 5px;
+}
+
+/*------------------------------ Media query breakpoints --------------------------------*/
+/*--------------------------------------------- For mobile and laptop ---------------------------------*/
+
+/*---------------- Mobile device--------------*/
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .All-course {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .blogs,
+    .All-course {
+        justify-items: center;
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
 }
